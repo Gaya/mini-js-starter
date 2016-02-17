@@ -28,11 +28,11 @@ module.exports = function(src, dist, name, browserSync) {
   }
 
   function bundle() {
-    b.bundle()
+    var o = b.bundle()
       .pipe(fs.createWriteStream(dist + name));
 
     if (browserSync) {
-      b.pipe(browserSync.reload({ stream: true }));
+      o.pipe(browserSync.reload({ stream: true }));
     }
   }
 };
