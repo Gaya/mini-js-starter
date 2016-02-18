@@ -7,6 +7,7 @@ module.exports = function(src, dist, name, browserSync) {
     cache: {},
     packageCache: {},
     plugin: [watchify],
+    debug: true,
   }).transform('babelify', { presets: ['es2015'] });
 
   //create dir before compiling
