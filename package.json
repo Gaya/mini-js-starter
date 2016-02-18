@@ -1,13 +1,13 @@
 {
-  "name": "animate",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "mini-js-starter",
+  "version": "0.0.4",
+  "description": "Very small and minimal js starter.",
+  "main": "tasks/serve.js",
   "scripts": {
     "serve": "node ./tasks/serve"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Gaya Kessler",
+  "license": "MIT",
   "devDependencies": {
     "babel-preset-es2015": "^6.3.13",
     "babelify": "^7.2.0",
