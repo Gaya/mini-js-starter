@@ -29,6 +29,9 @@ module.exports = function(src, dist, name, browserSync) {
 
   function bundle() {
     var o = b.bundle()
+      .on('error', function browserifyError(err) {
+        console.log(err.message);
+      })
       .pipe(fs.createWriteStream(dist + name));
 
     if (browserSync) {
